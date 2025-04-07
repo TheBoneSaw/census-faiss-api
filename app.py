@@ -7,9 +7,9 @@ import requests
 app = Flask(__name__)
 
 # === Config ===
-INDEX_PATH = "census_index.faiss"
-CHUNK_MAP_FILE = "chunk_map.json"
-NETLIFY_BASE = "https://67f29c41c2817a5c8a60cef7--polite-sunshine-a568af.netlify.app/chunks_by_size"
+INDEX_PATH = "census_index_updated.faiss"
+CHUNK_MAP_FILE = "chunk_map_updated.json"
+NETLIFY_BASE = "https://67f29c41c2817a5c8a60cef7--polite-sunshine-a568af.netlify.app/Chunks_by_size_v2"
 
 # === Load FAISS and Chunk Map ===
 index = faiss.read_index(INDEX_PATH)
